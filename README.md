@@ -1,6 +1,8 @@
 # Creating a Virtual Private Cloud VPC in AWS
 
-![AWS VPC](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/b95ad2bf-ccb8-4822-a126-c29d9d5e55b5)
+<p align="center">
+<img src="https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/b95ad2bf-ccb8-4822-a126-c29d9d5e55b5" />
+</p>
 
 ## Description
 
@@ -26,12 +28,14 @@ In this project, we’ll walk through creating an AWS Account, creating a VPC an
 
 <br>
 
-### Create an Amazon Web Services Account
+## Create an Amazon Web Services Account
 
-If you already have an AWS Account, skip to the next part. If not, click below to see more.
+If you already have an AWS Account, skip to the next part. If not, expand <b>Details</b> below to see more.
 <details>
 <summary>Details</summary>
+ 
 <br>  
+
 If you do not already have an AWS account, navigate to the following page to create one [https://aws.amazon.com/free](https://aws.amazon.com/free) and click on either Complete Signup or Create a Free Account.
 
 ![AWS Sign Up](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/60c3c592-9e8a-44d5-a7c8-74284d8cdc30)
@@ -40,7 +44,7 @@ When on the <b>Contact Information</b> page, select <b>Personal</b> for the Acco
  
 ![Account Type](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/feaadbb9-de42-4ebb-b6c0-6901c0337891)
 
-<b>Note</b>: you will be prompted to enter in credit card info. This is for identifiy verification and the card will only be charged if you exceeds Free Tier limits.
+<b>Note</b>: you will be prompted to enter in credit card info. This is for identity verification and the card will only be charged if you exceed the Free Tier limits.
 
 ![CC](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/d31dd4ae-82db-4079-bdd0-c69649451c52)
 
@@ -52,14 +56,14 @@ Sign up completed! Click on <b>Go to the AWS Management Console</b>.
 
 ![Sign up congrats](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/d60ae22b-4e1d-4235-9b3d-f30a36ec67aa)
 
-Sign in using the (defaul) Root user option. 
+Login to the AWS Management Console using the (default) <b>Root user</b> option. 
 
 ![Root user](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/f25d606b-96dd-42d9-85b3-a845951d3244)
 </details>
 
 <br>
 
-###  Create a Virtual Private Cloud
+##  Create a Virtual Private Cloud
 
 From the AWS Management Console, in the search bar, type <b>vpc</b> and click on <b>VPC</b>. 
 
@@ -69,12 +73,12 @@ Click <b>Create VPC</b> to start the creation wizard.
 
 ![Create VPC](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/8a12a68a-b856-45b3-a639-a808c90e9a33)
 
-On the <b>Create VPC</b> page, do the following:
+On the <b>Create VPC</b> page under <b>VPC settings</b>, do the following:
 
-![Create VPC 2a](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/4fe35b24-fcf2-4406-9d23-3d62afb917a9)
+![Create VPC 2a](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/0dfef9f1-1872-477a-a858-394d1227451e)
 
-- <b>Resources to create</b>: leave the default setting of <b>VPC and more</b>
-- <b>Name tag auto-generation</b>: leave the default setting of <b>project</b>
+- <b>Resources to create</b>: (leave the default setting of <b>VPC and more</b>)
+- <b>Name tag auto-generation</b>: (leave the default text, <b>project</b>)
 - <b>IPv4 CIDR</b>: enter <b>10.0.0.0/24</b>
 - <b>Number of Availability Zones (AZs)</b>: change to <b>1</b>
 - Leave the other options at their defaults
@@ -88,7 +92,7 @@ Now that we've successfully created a VPC, we'll now create an EC2 instance in i
 
 <br>
 
-### Create an Elastic Cloud Compute instance
+## Create an Elastic Cloud Compute instance
 
 In the search bar, type <b>ec2</b> and click on <b>EC2</b>.
 
@@ -98,16 +102,21 @@ From the EC2 Dashboard, click on <b>Launch instance</b>.
 
 ![Launch Instance](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/f1d05095-a5b4-4735-bedc-c3ae098dfed4)
 
-#### Launch an instance wizard
+### Launch an instance wizard
 Under <b>Name and tags</b>, enter a <b>Name</b> something you'll remember - eg. <b>MyWebServer</b>
 
-Under <b>Application and OS Images (Amazon Machine Image)</b>, leave it at the default of <b>Amazon Linux 2023 AMI</b> <br>
+![Name and tags](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/c7b4284c-2b18-4c65-ac60-13d35b9f8c33)
+
+Under <b>Application and OS Images (Amazon Machine Image)</b>, leave it at the default of <b>Amazon Linux 2023 AMI</b> 
+
 ![App and OS](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/598a3b54-4c0a-4d49-9427-ce9f65468a99)
 
-Under <b>Instance type</b>, leave it at the default of <b>t2.micro</b> <br>
+Under <b>Instance type</b>, leave it at the default of <b>t2.micro</b>
+
 ![Instance type](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/c915c310-54e4-4c6f-82de-a4387f5a0073)
 
-Under <b>Key pair (login)</b>, click on <b>Create new key pair</b> <br>
+Under <b>Key pair (login)</b>, click on <b>Create new key pair</b> 
+
 ![Key pair](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/83fe3e3f-8788-4d33-a220-9c38f0752e66)
 
 In the <b>Create key pair</b> popup, do the following: 
@@ -117,10 +126,16 @@ In the <b>Create key pair</b> popup, do the following:
 - Click <b>Create key pair</b>
 - <b>Note</b>: the file will be automatically downloaded via the browser your using. 
 
-Under <b>Network settings</b> / <b>VPC - required</b>: 
--click on the drop down to change the default one to the VPC created earlier
+Under <b>Network settings</b>, first click <b>Edit</b> towards the right, then: 
+
+![NS Edit](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/fa55543d-9582-48b0-9883-0cd1a966a1a2)
+
+- Under <b>VPC - required</b> click on the drop down to change the (default) one to the VPC created earlier
+
 ![NS VPC](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/cb70e526-a685-4d7b-8d8e-ddd0e1ff46fa)
-- The <b>Subnet</b> will auto-populate the private one. So we will not see public IP info listed once provisioned. 
+
+- The <b>Subnet</b> will auto-populate the private one.
+     - A public IP will not be assigned once provisioned unless <b>Auto-assign public IP</b> is set to <b>Enable</b>. For this project, we are leaving it set to <b>Disable</b>. 
 - Leave the defaults for all the other settings.
 
 ![Network Settings](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/b93a5e50-7f76-45b6-9316-8ee6e10e1769)
