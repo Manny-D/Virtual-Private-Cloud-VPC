@@ -8,13 +8,13 @@ A virtual private cloud (VPC) is a secure, isolated private cloud hosted within 
 
 <br>
 
-Key Features of AWS VPC
+#### Key Features of AWS VPC:
 
 - <b>Customization</b>: You define your virtual network environment, including selecting your own IP address ranges, creating subnets for specific purposes (like public-facing web servers or private databases), and configuring how traffic flows within your VPC.
 - <b>Isolation</b>: Your VPC is logically separated from other user's VPCs, providing an extra layer of security for your resources.
 - <b>Connectivity</b>: You control how your resources communicate with each other within the VPC and how they access the internet. VPC offers options like internet gateways and virtual private networks (VPNs) for secure connections.
 
-Key Benefits of AWS VPC
+#### Key Benefits of AWS VPC:
 
 - <b>Enhanced Security</b>: Isolate critical resources within your VPC and control access with security groups and network access controls. This helps prevent unauthorized access to your data and applications.
 - <b>Improved Manageability</b>: Simplify network management by creating subnets with specific purposes and controlling traffic flow. This makes it easier to manage complex deployments.
@@ -22,7 +22,7 @@ Key Benefits of AWS VPC
 
 <br>
 
-In this lab, we’ll walk through creating an AWS Account, creating a VPC and launching an Elastic Compute Cloud (EC2) instance within that VPC.
+In this project, we’ll walk through creating an AWS Account, creating a VPC and launching an Elastic Compute Cloud (EC2) instance within that VPC.
 
 <br>
 
@@ -116,3 +116,29 @@ In the <b>Create key pair</b> popup, do the following:
 - <b>Private key file format</b>: leave the default setting <b>(.pem)</b>
 - Click <b>Create key pair</b>
 - <b>Note</b>: the file will be automatically downloaded via the browser your using. 
+
+Under <b>Network settings</b> / <b>VPC - required</b>: 
+-click on the drop down to change the default one to the VPC created earlier
+![NS VPC](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/cb70e526-a685-4d7b-8d8e-ddd0e1ff46fa)
+- The <b>Subnet</b> will auto-populate the private one. So we will not see public IP info listed once provisioned. 
+- Leave the defaults for all the other settings.
+
+![Network Settings](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/b93a5e50-7f76-45b6-9316-8ee6e10e1769)
+
+Click <b>Launch instance</b> and a similar page should load. 
+
+![View all instances](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/6405186e-cea1-49c3-8956-e6732a267138)
+
+Click on <b>View all instances</b> to see a it in the EC2 instances list.
+
+![Instances](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/86ea166d-2b78-4937-9332-e95fc5316b64)
+
+Click on the <b>Instance ID</b> to see it in more detail.
+
+![Instance Summary](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/ea2705c8-1c93-41db-a202-35ce5d388f2e)
+
+<br>
+
+## Conclusion
+
+This project successfully established a secure foundation for deploying resources in the AWS cloud. We created a Virtual Private Cloud (VPC) with customized settings and launched an EC2 instance within it. This configuration provides isolation and enhanced security for our cloud environment, along with the flexibility to scale and manage resources effectively.
