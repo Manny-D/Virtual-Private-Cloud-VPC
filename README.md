@@ -120,11 +120,11 @@ Under <b>Key pair (login)</b>, click on <b>Create new key pair</b>
 ![Key pair](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/83fe3e3f-8788-4d33-a220-9c38f0752e66)
 
 In the <b>Create key pair</b> popup, do the following: 
-- <b>Name</b>: enter in something you'll remember - eg. <b>master1</b>
-- <b>Key pair type</b>: leave the default setting <b>(RSA)</b>
-- <b>Private key file format</b>: leave the default setting <b>(.pem)</b>
+- <b>Name</b>: (enter in something you'll remember - eg. <b>master1</b>)
+- <b>Key pair type</b>: (leave the default setting <b>(RSA)</b>)
+- <b>Private key file format</b>: (leave the default setting <b>(.pem)</b>)
 - Click <b>Create key pair</b>
-- <b>Note</b>: the file will be automatically downloaded via the browser your using. 
+- <b>Note</b>: the file will be automatically downloaded via the browser your using
 
 Under <b>Network settings</b>, first click <b>Edit</b> towards the right, then: 
 
@@ -134,8 +134,8 @@ Under <b>Network settings</b>, first click <b>Edit</b> towards the right, then:
 
 ![NS VPC](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/cb70e526-a685-4d7b-8d8e-ddd0e1ff46fa)
 
-- The <b>Subnet</b> will auto-populate the private one.
-     - A public IP will not be assigned once provisioned unless <b>Auto-assign public IP</b> is set to <b>Enable</b>. For this project, we are leaving it set to <b>Disable</b>. 
+- <b>Subnet</b>: (will auto-populate the private one created during the VPC step)
+     - <b>Note</b>: a public IP will not be assigned once provisioning is completed unless <b>Auto-assign public IP</b> is set to <b>Enable</b>. For this project, we are leaving it set to <b>Disable</b>. 
 - Leave the defaults for all the other settings.
 
 ![Network Settings](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/b93a5e50-7f76-45b6-9316-8ee6e10e1769)
