@@ -71,17 +71,18 @@ Click <b>Create VPC</b> to start the creation wizard.
 
 On the <b>Create VPC</b> page, do the following:
 
-![Create VPC 2](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/6a9b61a9-03c2-4dc2-b08d-28ded508daca)
+![Create VPC 2a](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/4fe35b24-fcf2-4406-9d23-3d62afb917a9)
 
-- <b>Resources to create</b>: tick the <b>VPC only</b> radio button
-- <b>Name tag</b>: though optional, enter in something you'll remember - eg. <b>my-vpc</b>
+- <b>Resources to create</b>: leave the default setting of <b>VPC and more</b>
+- <b>Name tag auto-generation</b>: leave the default setting of <b>project</b>
 - <b>IPv4 CIDR</b>: enter <b>10.0.0.0/24</b>
+- <b>Number of Availability Zones (AZs)</b>: change to <b>1</b>
 - Leave the other options at their defaults
 - Scroll down and click <b>Create VPC</b>
 
-Once created, you should receive the following:
+Once successfully created, click on <b>View VPC</b> and your VPC <b>Details</b> page will load:
 
-![Your VPCs](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/54ffccf7-c4d6-4c9f-b213-a1db35d9a2b8)
+![Your VPCs (a)](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/808f3cb5-0a80-4e4e-b234-f13850d72fc9)
 
 Now that we've successfully created a VPC, we'll now create an EC2 instance in it. 
 
@@ -97,13 +98,21 @@ From the EC2 Dashboard, click on <b>Launch instance</b>.
 
 ![Launch Instance](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/f1d05095-a5b4-4735-bedc-c3ae098dfed4)
 
-In the <b>Launch an instance wizard</b>, do the following:
-- Under <b>Name and tags</b>, enter a <b>Name</b> something you'll remember - eg. <b>MyWebServer</b>
-- Under <b>Application and OS Images (Amazon Machine Image)</b>, leave it at the default of <b>Amazon Linux 2023 AMI</b> <br>
+#### Launch an instance wizard
+Under <b>Name and tags</b>, enter a <b>Name</b> something you'll remember - eg. <b>MyWebServer</b>
+
+Under <b>Application and OS Images (Amazon Machine Image)</b>, leave it at the default of <b>Amazon Linux 2023 AMI</b> <br>
 ![App and OS](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/598a3b54-4c0a-4d49-9427-ce9f65468a99)
 
-- Under <b>Instance type</b>, leave it at the default of <b>t2.micro</b> <br>
+Under <b>Instance type</b>, leave it at the default of <b>t2.micro</b> <br>
 ![Instance type](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/c915c310-54e4-4c6f-82de-a4387f5a0073)
 
-- Under <b>Key pair (login)</b>, click on <b>Create new key pair</b>
+Under <b>Key pair (login)</b>, click on <b>Create new key pair</b> <br>
+![Key pair](https://github.com/Manny-D/Virtual-Private-Cloud-VPC/assets/99146530/83fe3e3f-8788-4d33-a220-9c38f0752e66)
 
+In the <b>Create key pair</b> popup, do the following: 
+- <b>Name</b>: enter in something you'll remember - eg. <b>master1</b>
+- <b>Key pair type</b>: leave the default setting <b>(RSA)</b>
+- <b>Private key file format</b>: leave the default setting <b>(.pem)</b>
+- Click <b>Create key pair</b>
+- <b>Note</b>: the file will be automatically downloaded via the browser your using. 
